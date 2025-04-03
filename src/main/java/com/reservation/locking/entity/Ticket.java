@@ -17,6 +17,9 @@ public class Ticket {
     private String lastName;
     private String gender;
 
+    @Version
+    private Long version;
+
     @ManyToOne(fetch = FetchType.LAZY) //
     @JoinColumn(name = "bus_id")
     private BusDetails busDetails; // why not bus id?

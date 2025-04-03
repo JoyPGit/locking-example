@@ -21,6 +21,9 @@ public class BusDetails {
     private LocalDateTime departureTime;
     private int capacity;
 
+    @Version
+    private Long version;
+
     @OneToMany(mappedBy = "busDetails")
     private Set<Ticket> tickets;
 

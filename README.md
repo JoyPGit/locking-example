@@ -8,4 +8,3 @@ git push -u origin master
 
 https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
 
-ssh -T GITHUB-USERNAME@github.com

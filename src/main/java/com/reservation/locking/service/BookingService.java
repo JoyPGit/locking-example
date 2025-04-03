@@ -31,7 +31,7 @@ public class BookingService {
      */
     @Transactional
     public void bookTicket() throws NoSeatsAvailableException, InterruptedException { //
-        Optional<BusDetails> busDetails = this.busRepository.findById(2L);
+        Optional<BusDetails> busDetails = this.busRepository.findWithLockById(52L);
         if(busDetails.isPresent()){
 
             this.saveTicket("John", "Allen",
@@ -43,7 +43,7 @@ public class BookingService {
 
     @Transactional
     public void bookTicket1() throws NoSeatsAvailableException, InterruptedException { //
-        Optional<BusDetails> busDetails = this.busRepository.findById(2L);
+        Optional<BusDetails> busDetails = this.busRepository.findWithLockById(52L);
         if(busDetails.isPresent()){
 
             this.saveTicket("Mary", "Allen",
