@@ -34,6 +34,8 @@ dependencies {
 	implementation("org.apache.commons:commons-lang3:3.17.0")
 	// https://mvnrepository.com/artifact/com.mysql/mysql-connector-j
 	implementation("com.mysql:mysql-connector-j:9.2.0")
+	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-actuator
+	implementation("org.springframework.boot:spring-boot-starter-actuator:3.4.5")
 }
 
 tasks.named('test') {

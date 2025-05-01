@@ -23,5 +23,9 @@ public class Ticket {
     @ManyToOne(fetch = FetchType.LAZY) //
     @JoinColumn(name = "bus_id")
     private BusDetails busDetails; // why not bus id?
+    // it references the id of the parent table by default, if id in bus is renamed
+    // to bus_id, a new col bus_id is created along with id and bus_id is considered the
+    // primary key
+    // works both ways with or w/o renaming???
 
 }
